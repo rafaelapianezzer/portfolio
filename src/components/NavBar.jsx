@@ -5,7 +5,7 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex items-center justify-between p-4 px-6 sm:px-16 lg:px-120">
+    <div className="flex items-center justify-between p-4 px-6 sm:px-16 lg:px-120 mb-10">
       <h4 className="text-neutral-900 text-lg text-[28px] dark:text-neutral-50">
         <span className="text-purple-900 dark:text-bg-purple-300">{"<"}</span>r.pianezzer
         <span className="text-purple-900 dark:bg-text-purple-300">{"/>"}</span>
