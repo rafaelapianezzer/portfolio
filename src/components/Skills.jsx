@@ -31,6 +31,10 @@ export const Skills = () => {
             name: "StyledComponents",
             icon: <i className="fa-solid fa-paintbrush"></i>
         },
+        { 
+            name: "Syntactically Awesome Stylesheets",
+            icon: <i class="fa-brands fa-sass"></i>
+        },
         {
             name: "Bootstrap",
             icon: <i className="fa-brands fa-bootstrap"></i>

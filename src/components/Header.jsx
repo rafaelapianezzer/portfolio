@@ -1,6 +1,6 @@
 export const Header = () => {
     return (
-        <div className='flex flex-col items-center py-12 px-6 sm:px-16 lg:px-120 sm:py-40 lg:py-28 h-screen'>
+        <div className='flex flex-col items-center  py-12 px-6 sm:px-16 lg:px-120 sm:py-40 lg:py-28  h-screen '>
             <div className='md:mx-auto max-w-4xl flex '>
                 <div className='text-left md:text-center lg:text-center flex flex-col'>
                    <h1 className='font-display text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50 '>
