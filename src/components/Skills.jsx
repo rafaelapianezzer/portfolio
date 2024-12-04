@@ -31,8 +31,8 @@ export const Skills = () => {
             name: "StyledComponents",
             icon: <i className="fa-solid fa-paintbrush"></i>
         },
-        { 
-            name: "Syntactically Awesome Stylesheets",
+        {
+            name: "SASS",
             icon: <i class="fa-brands fa-sass"></i>
         },
         {
@@ -77,21 +77,21 @@ export const Skills = () => {
     }));
 
     return (
-        <div className='flex flex-col items-center justify-center px-4 bg-neutral-50'>
-            <h4 className='p-4'>Habilidades</h4>
-            <div className="flex flex-wrap  justify-center mx-auto gap-4  lg:w-6/12 ">
-
+        <div className="flex flex-col items-center w-full lg:w-10/12 xl:w-8/12 mx-auto p-4">
+            <h4 className="p-4 font-sora font-bold text-center text-2xl m-10">Habilidades</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 w-10/12">
                 {skillsList.map((skill) => (
-                    <div key={skill.id} className="flex flex-col  ">
-                        {/* Container com borda para o ícone e o nome */}
-                        <div className="flex flex-col items-center justify-center bg-neutral-50 border-purple-600 border  h-28 w-28">
-                            <div className="text-[28px]">{skill.icon}</div>
-                            <p className="mt-2 text-neutral-900 text-[10px] font-sora">{skill.name}</p>
-                        </div>
+                    <div key={skill.id} className="flex flex-col items-center justify-center text-center h-28 w-full p-4 border rounded shadow-md">
+                        <div className="text-[28px]">{skill.icon}</div>
+                        <p className="mt-2 text-neutral-900 text-[10px] font-sora">{skill.name}</p>
                     </div>
                 ))}
             </div>
         </div>
+
+
+
+
 
 
 
