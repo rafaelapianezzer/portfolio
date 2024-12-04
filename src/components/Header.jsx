@@ -1,30 +1,6 @@
-import { useState, useEffect } from 'react';
-
 export const Header = () => {
-    const [showScroll, setShowScroll] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            if (window.scrollY > lastScrollY) {
-                // Se rolou para baixo, esconder o scroll
-                setShowScroll(false);
-            } else {
-                // Se rolou para cima, mostrar o scroll
-                setShowScroll(true);
-            }
-            setLastScrollY(window.scrollY); // Atualiza a última posição do scroll
-        };
-
-        // Adiciona o ouvinte de evento de rolagem
-        window.addEventListener('scroll', handleScroll);
-
-        // Limpeza do ouvinte ao desmontar o componente
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollY]); // Dependência de lastScrollY
-
     return (
-        <div className='flex flex-col items-center py-12 px-6 sm:px-16 lg:px-120 sm:py-40 lg:py-28 h-screen'>
+        <div className='flex flex-col items-center py-12 px-6 sm:px-16 lg:px-120 sm:py-40 lg:py-28 xl:h-screen lg:h-screen '>
             <div className='md:mx-auto max-w-4xl flex'>
                 <div className='text-left md:text-center lg:text-center flex flex-col'>
                     <h1 className='font-display text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50'>
@@ -54,16 +30,14 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-
-            {/* Ícone de scroll fixado no canto inferior da tela, com visibilidade controlada */}
-            {showScroll && (
-                <div className="fixed bottom-12 left-1/2 transform -translate-x-1/2 flex flex-col items-center text-neutral-400 bg-neutral-50">
-                    <div className="animate-bounce">
-                        <span className='text-xs mr-2'>Scroll</span>
-                        <i className="fa-solid fa-chevron-down dark:text-purple-300"></i>
-                    </div>
+            {/* Ícone de scroll fixado no canto inferior da tela */}
+            <div className='lg:py-32 xl:py-32 flex items-baseline'>
+                <div className="hidden lg:block xl:block animate-bounce">
+                    <span className='text-sm mr-2'>Scroll</span>
+                    <i className="fa-solid fa-chevron-down dark:text-purple-300"></i>
                 </div>
-            )}
+            </div>
+
         </div>
     );
 };

@@ -5,7 +5,7 @@ export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="flex w-10/12 mx-auto py-8">
+        <div className="flex w-10/12 mx-auto py-6">
             <div className='flex flex-row justify-between w-full items-center py-3'>
                 <h4 className="text-neutral-900 text-2xl  dark:text-neutral-50">
                     <span className="text-purple-900 dark:text-bg-purple-300">{"<"}</span>r.pianezzer

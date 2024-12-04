@@ -2,13 +2,21 @@ import foto from '../assets/foto.jpeg';
 
 export const About = () => {
     return (
-        <div className='bg-neutral-50 dark:bg-neutral-900'>
+        <div>
             <h4 className="p-4 font-sora font-bold text-center text-2xl m-10">Sobre</h4>
             <div className="flex w-full sm:w-10/12 md:w-10/12 lg:w-10/12 xl:w-6/12 flex-col md:flex-row lg:flex-row xlg:flex-row mx-auto items-center justify-beteen ">
                 <div className='flex flex-col justify-center items-center text-justify gap-8'>
-                    <div className='w-10/12'>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis officia eos atque fugit nisi modi quaerat ea, ullam eum omnis error autem possimus explicabo neque officiis qui magni ratione nihil!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem at quos, consequatur repudiandae recusandae quidem non magnam accusantium maiores officiis et quam architecto distinctio, ducimus eveniet saepe magni quasi voluptates.</p>
+                    <div className='w-10/12 gap-8 flex flex-col font-inter text-base not-italic font-normal leading-6 tracking-[0.25px] text-neutral-800 '>
+                        <p className=''>
+                            Sou desenvolvedora Full Stack em transição de carreira e apaixonada por tecnologia. Depois de anos atuando como advogada, decidi direcionar minha carreira para a área de tecnologia, uma paixão que sempre esteve presente.
+                        </p>
+                        <p>
+                            Hoje, estou cursando Análise e Desenvolvimento de Sistemas e concluí o curso de Desenvolvimento Web Full Stack, onde aprendi a desenvolver aplicações completas.
+                        </p>
+                        <p>
+                            Minha jornada é movida pela vontade de aprender e crescer continuamente, sempre conectando criatividade com tecnologia.
+                        </p>
+
                     </div>
                 </div>
                 <div className='relative my-8'>

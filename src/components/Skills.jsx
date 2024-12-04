@@ -81,10 +81,16 @@ export const Skills = () => {
             <h4 className="p-4 font-sora font-bold text-center text-2xl m-10">Habilidades</h4>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 w-10/12">
                 {skillsList.map((skill) => (
-                    <div key={skill.id} className="flex flex-col items-center justify-center text-center h-28 w-full p-4 border rounded shadow-md">
-                        <div className="text-[28px]">{skill.icon}</div>
-                        <p className="mt-2 text-neutral-900 text-[10px] font-sora">{skill.name}</p>
-                    </div>
+                    <div 
+                    key={skill.id} 
+                    className="flex flex-col items-center justify-center text-center h-28 w-full p-4 border-purple-100 border-[2px] rounded shadow-lg 
+                             hover:border-purple-200 transition-all duration-300 dark:bg-purple-100 
+                             dark:hover:bg-purple-200"
+                  >
+                    <div className="text-[28px]">{skill.icon}</div>
+                    <p className="mt-2 text-neutral-900 font-light text-[12px] font-sora ">{skill.name}</p>
+                  </div>
+                  
                 ))}
             </div>
         </div>
