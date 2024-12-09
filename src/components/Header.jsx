@@ -4,7 +4,8 @@ export const Header = () => {
     return (
         <div className="relative bg-gradient-to-r from-[#bc8aeea3] to-[#3657a5c3] dark:from-[#180718e7] dark:to-[#1e0924c3] pb-8 ">
             <Navbar />
-            <div className="flex flex-col items-center px-6 sm:px-16 lg:px-120 py-16  ">
+            <div className="flex flex-col items-center px-6 sm:px-16 lg:px-120 py-16 lg:py-20">
+
                 <div className="md:mx-auto max-w-4xl flex">
                     <div className="text-left md:text-center lg:text-center flex flex-col">
                         <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50">
