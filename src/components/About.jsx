@@ -3,7 +3,7 @@ import foto from '../assets/foto.jpeg';
 export const About = () => {
     return (
         <div className='bg-purple-50'>
-            <h4 className="pt-20 pb-12 font-sora font-bold text-center text-2xl">Sobre</h4>
+            <h4 className="pt-24 pb-12 font-sora font-bold text-center text-2xl">Sobre</h4>
             <div className="flex w-full sm:w-10/12 md:w-10/12 lg:w-10/12 xl:w-6/12 flex-col md:flex-row lg:flex-row xlg:flex-row mx-auto items-center justify-beteen ">
                 <div className='flex flex-col justify-center items-center text-justify gap-8'>
                     <div className='w-10/12 gap-8 flex flex-col font-inter text-base not-italic font-normal leading-6 tracking-[0.25px] text-neutral-800 '>
