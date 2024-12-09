@@ -8,7 +8,7 @@ export const About = () => {
                 <div className='flex flex-col justify-center items-center text-justify gap-8'>
                     <div className='w-10/12 gap-8 flex flex-col font-inter text-base not-italic font-normal leading-6 tracking-[0.25px] text-neutral-800 '>
                         <p className=''>
-                            Sou desenvolvedora Full Stack em transição de carreira e apaixonada por tecnologia. Depois de anos atuando como advogada, decidi direcionar minha carreira para a área de tecnologia, uma paixão que sempre esteve presente.
+                            Depois de anos atuando como advogada, decidi direcionar minha carreira para a área da tecnologia, um interesse que sempre esteve presente.
                         </p>
                         <p>
                             Hoje, estou cursando Análise e Desenvolvimento de Sistemas e concluí o curso de Desenvolvimento Web Full Stack, onde aprendi a desenvolver aplicações completas.

@@ -1,11 +1,23 @@
+import mfit from '../assets/mfit-image.png';
+import redux from '../assets/icons8-redux-50.png';
+import tailwind from '../assets/icons8-tailwind-css-100 (1).png';
+
 export const Projects = () => {
 
     const projectsList = [
         {
-            image: "https://via.placeholder.com/300", // Link para a imagem do projeto
-            title: "Projeto 1",
+            image: mfit,
+            title: "MFIT Anamnese",
             description: "Este é um projeto focado em React e Tailwind CSS.",
-            technologies: ["React", "Tailwind CSS", "API REST"],
+            technologies: [ 
+              <div className='flex gap-1 items-center'>
+                  <i className="fa-brands fa-html5 text-xl"></i>,
+                <i className="fa-brands fa-css3-alt text-2xl"></i>,
+                <i className="fa-brands fa-react text-2xl"></i>,
+                <img src={tailwind} className='h-7'/>,
+                <img src={redux} className='h-7' />
+              </div>
+            ],
             repoLink: "https://github.com/seuusuario/projeto1",
             deployLink: "https://seuprojeto1.vercel.app"
         },
