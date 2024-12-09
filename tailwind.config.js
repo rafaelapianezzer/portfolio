@@ -7,6 +7,9 @@ module.exports = {
       sora: ['Sora', 'sans-serif'],
     },
     extend: {
+      backgroundImage: {
+        'curved-bottom': "url('data:image/svg+xml;utf8,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1430 320\"><path fill=\"%238B5CF6\" fill-opacity=\"1\" d=\"M 0 256 L 120 266.7 C 240 277 480 299 720 298.7 C 960 299 1200 277 1320 266.7 L 1440 256 L 1440 320 L 1320 320 C 1200 320 960 320 720 320 C 480 320 240 320 120 320 L 0 320 Z\"></path></svg>')",
+      },
       colors: {
         purple: {
           50: '#F5F3FF',

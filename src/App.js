@@ -11,7 +11,7 @@ import { Footer } from './components/Footer';
 function App() {
   return (
       <div className='bg-neutral-50  dark:bg-neutral-900'>
-        <Navbar />
+     
         <Header />
         <About />
         <Skills />
