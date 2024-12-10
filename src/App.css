@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
 html, body {
     height: 100%;
     margin: 0;
@@ -36,8 +39,40 @@ html, body {
     --neutral-900: #171717;
   }
   
-  
+  /* App.css */
+.bubble {
+  position: absolute;
+  bottom: -50px; /* Ajuste conforme necessário */
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(139, 92, 246, 1); /* A cor da bolha pode ser ajustada */
+  animation-timing-function: ease-in-out;
+}
 
+/* Classe para animar a bolha com a animação bubble1 */
+.bubble1 {
+  animation: bubble1 5s infinite;
+}
 
+/* Classe para animar a bolha com a animação bubble2 */
+.bubble2 {
+  animation: bubble2 6s infinite;
+}
+
+/* Classe para animar a bolha com a animação bubble3 */
+.bubble3 {
+  animation: bubble3 7s infinite;
+}
+
+/* Classe para animar a bolha com a animação bubble4 */
+.bubble4 {
+  animation: bubble4 8s infinite;
+}
+
+/* Classe para animar a bolha com a animação bubble5 */
+.bubble5 {
+  animation: bubble5 9s infinite;
+}
 
 

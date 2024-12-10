@@ -1,11 +1,16 @@
 import { Navbar } from "./NavBar";
 
+
 export const Header = () => {
     return (
-        <div className="relative bg-gradient-to-r from-[#bc8aeea3] to-[#3657a5c3] dark:from-[#180718e7] dark:to-[#1e0924c3] pb-8 ">
-            <Navbar />
-            <div className="flex flex-col items-center px-6 sm:px-16 lg:px-120 py-16 lg:py-20">
+        <div className="relative bg-gradient-to-r from-[#bc8aeea3] to-[#3657a5c3] dark:from-[#180718e7] dark:to-[#1e0924c3] pb-8">
+         
+            
+            <div className="background-animation h-full z-10 absolute bg-red"></div>
 
+            <Navbar />
+         
+            <div className="flex flex-col items-center px-6 sm:px-16 lg:px-120 py-16 lg:py-20">
                 <div className="md:mx-auto max-w-4xl flex">
                     <div className="text-left md:text-center lg:text-center flex flex-col">
                         <h1 className="font-display text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-50">
@@ -48,8 +53,8 @@ export const Header = () => {
                     </div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 320" className="absolute -bottom-2 left-0 w-full h-auto">
-                <path className="fill-purple-50  dark:fill-purple-800" fillOpacity="1" d="M 0 256 L 120 266.7 C 240 277 480 299 720 298.7 C 960 299 1200 277 1320 266.7 L 1440 256 L 1440 320 L 1320 320 C 1200 320 960 320 720 320 C 480 320 240 320 120 320 L 0 320 Z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1430 320" className="absolute -bottom-1 left-0 w-full h-auto">
+                <path className="fill-purple-50 dark:fill-purple-800" fillOpacity="1" d="M 0 256 L 120 266.7 C 240 277 480 299 720 298.7 C 960 299 1200 277 1320 266.7 L 1440 256 L 1440 320 L 1320 320 C 1200 320 960 320 720 320 C 480 320 240 320 120 320 L 0 320 Z"></path>
             </svg>
         </div>
     );

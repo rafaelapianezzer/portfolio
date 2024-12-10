@@ -33,7 +33,7 @@ export const Skills = () => {
         },
         {
             name: "SASS",
-            icon: <i class="fa-brands fa-sass"></i>
+            icon: <i className="fa-brands fa-sass"></i>
         },
         {
             name: "Bootstrap",
