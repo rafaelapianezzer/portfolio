@@ -29,8 +29,7 @@ export const BubbleComponent = () => {
   }, []);
 
   return (
-    <div className="fixed w-full h-full top-0 left-0 ">
-      {/* Renderizando as bolhas com animação */}
+    <div className="fixed w-full h-full top-0 left-0 z-10">
       <div className="flex justify-between">
         {bubbles.map((bubble, index) => (
           <motion.div

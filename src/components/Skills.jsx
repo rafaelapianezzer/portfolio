@@ -4,6 +4,8 @@ import tailwind from '../assets/icons8-tailwind-css-100 (1).png';
 import api from '../assets/api.png';
 import ts from '../assets/typescript.png';
 
+
+
 export const Skills = () => {
 
     const skillsList = [
@@ -42,6 +44,9 @@ export const Skills = () => {
         {
             name: "Tailwind CSS",
             icon: <img src={tailwind} className='h-8' />
+
+
+
         },
         {
             name: "React Hooks",
@@ -61,7 +66,7 @@ export const Skills = () => {
         },
         {
             name: "TypeScript",
-            icon: <img src={ts} className='h-7' />
+            icon: <img src={ts} className='h-8 pb-[4px]' />
         },
         {
             name: "Python",
@@ -78,23 +83,23 @@ export const Skills = () => {
 
     return (
         <div className="flex flex-col items-center w-full lg:w-10/12 xl:w-8/12 mx-auto p-4">
-            <h4 className="p-4 font-sora font-bold text-center text-2xl m-10">Habilidades</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 w-10/12">
+            <h4 className="font-display text-3xl md:text-4xl font-bold text-center text-neutral-900 dark:text-neutral-50 py-20">Habilidades</h4>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 w-10/12 relative z-20">
                 {skillsList.map((skill) => (
-                    <div 
-                    key={skill.id} 
-                    className="flex flex-col items-center justify-center text-center h-28 w-full p-4 border-purple-100 border-[2px] rounded shadow-lg 
-                             hover:border-purple-200 transition-all duration-300 dark:bg-purple-100 
-                             dark:hover:bg-purple-200"
-                  >
-                    <div className="text-[28px]">{skill.icon}</div>
-                    <p className="mt-2 text-neutral-900 font-light text-[12px] font-sora ">{skill.name}</p>
-                  </div>
-                  
+                    <div
+                        key={skill.id}
+                        className="flex flex-col items-center justify-center text-center  h-28 w-full p-4 rounded  relative z-20 shadow-lg
+                        bg-purple-200
+                        border-purple-200 border-[2px]
+                        dark:hover:bg-purple-200"
+                    >
+                        <div className="text-[28px]">{skill.icon}</div>
+                        <p className="mt-2 text-red font-light text-[12px] font-sora ">{skill.name}</p>
+                    </div>
+
                 ))}
             </div>
         </div>
-
 
 
 

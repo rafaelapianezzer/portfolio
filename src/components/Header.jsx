@@ -4,8 +4,7 @@ import { ScrollButton } from "./ScroollButton";
 
 export const Header = () => {
     return (
-        <div className="relative  ">
-            <div className="background-animation h-full z-10 absolute bg-red"></div>
+        <div>
             <Navbar />
             <div className="flex flex-col items-center justify-between py-12 px-6 sm:px-16 lg:px-120 sm:py-40 lg:py-28 2xl:py-48">
                 <div className="md:mx-auto max-w-4xl flex">
