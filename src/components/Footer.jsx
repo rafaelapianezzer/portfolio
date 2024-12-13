@@ -56,7 +56,7 @@ export const Footer = () => {
       </div>
       {showButton && (
         <button
-          className="fixed right-4 md:right-12 bottom-8 text-neutral-100 bg-purple-500 py-3 px-4  md:py-4 md:px-5 rounded-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out bounce-custom z-50"
+          className="fixed right-4 md:right-12 bottom-20 text-neutral-100 bg-purple-500 py-3 px-4  md:py-4 md:px-5 rounded-lg shadow-lg hover:bg-purple-700 transition duration-300 ease-in-out bounce-custom z-50"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
           <i class="fa-solid fa-arrow-up"></i>
