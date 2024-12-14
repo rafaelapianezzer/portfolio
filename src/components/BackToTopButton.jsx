@@ -3,15 +3,13 @@ import React, { useState, useEffect } from 'react';
 export const BackToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
-  // Função para rolar suavemente ao topo
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
     });
   };
-
-  // Verificar quando o botão deve aparecer
+  
   useEffect(() => {
     const toggleVisibility = () => {
       setVisible(window.scrollY > 300);

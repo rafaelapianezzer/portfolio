@@ -27,7 +27,7 @@ export const Footer = () => {
   return (
     <div>
       <div className="flex flex-col items-center w-full lg:w-9/12 xl:w-7/12 mx-auto p-4 relative z-20">
-        <h4 className=" text-3xl md:text-4xl font-bold text-center text-neutral-900 dark:text-neutral-50 p-12
+        <h4 id="contact" className="font-sora text-3xl md:text-4xl font-bold text-center text-neutral-900 dark:text-neutral-50 p-12
         ">Contato</h4>
         <p className="text-center text-neutral-600 dark:text-neutral-300">Sinta-se à vontade para entrar em contato por e-mail ou através das redes sociais.</p>
         <div className="flex gap-6 justify-center items-center py-20">
@@ -68,13 +68,3 @@ export const Footer = () => {
     </div>
   );
 };
-
-
-
-<a
-  href="https://br.linkedin.com/in/rafaela-pianezzer-970250150"
-  target="_blank"
-  className="bg-purple-600 rounded-[5px] px-3 py-1"
->
-  <i className="fa-brands fa-linkedin text-2xl text-purple-50"></i>
-</a>
