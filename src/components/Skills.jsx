@@ -84,7 +84,7 @@ export const Skills = () => {
     return (
         <div className="flex flex-col relative z-20 items-center mx-auto  my-20 ">
             <h4 id="skills" className="font-sora text-3xl md:text-4xl font-bold text-center text-neutral-900 dark:text-neutral-50 py-20">Habilidades</h4>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 w-10/12 relative z-20">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 gap-8 w-10/12 xl:w-8/12 relative z-20">
                 {skillsList.map((skill) => (
                     <div
                         key={skill.id}

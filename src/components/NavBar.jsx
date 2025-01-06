@@ -1,15 +1,28 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ThemeToggle } from './ThemeToggle';
 
 
 export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+    useEffect(() => {
+        // Quando o menu abrir, desabilita a rolagem do body
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [isOpen]);
+
     return (
         <>
             <div className="flex items-center justify-between p-4 px-6 sm:px-16 lg:px-120 relative z-20">
                 <div className="flex flex-row justify-between w-full items-center py-3">
-                    <h4 className="font-sora text-neutral-900 text-3xl dark:text-neutral-50">
+                    <h4 className="font-sora text-neutral-900 text-lg dark:text-neutral-50">
                         <span className="text-purple-900 dark:text-purple-300">{"<"}</span>r.pianezzer
                         <span className="text-purple-900 dark:text-purple-300">{"/>"}</span>
                     </h4>
@@ -26,7 +39,7 @@ export const Navbar = () => {
                     <a
                         href="#header"
                         className="text-neutral-900 hover:text-purple-600 dark:text-neutral-50 dark:hover:text-purple-300 
-                            hover:underline transition duration-300 ease-in-out font-sora font-medium"  
+                            hover:underline transition duration-300 ease-in-out font-sora font-medium"
                     >
                         Home
                     </a>
@@ -40,7 +53,7 @@ export const Navbar = () => {
                     <a
                         href="#skills"
                         className="text-neutral-900 hover:text-purple-600 dark:text-neutral-50 dark:hover:text-purple-300 
-                            hover:underline transition duration-500 ease-in-out font-sora font-medium"  
+                            hover:underline transition duration-500 ease-in-out font-sora font-medium"
                     >
                         Habilidades
                     </a>

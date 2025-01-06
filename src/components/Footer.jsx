@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import linkedin from '../assets/BsLinkedin.svg';
 import gitHub from '../assets/BsGithub.svg';
+import { EmailModal } from "./EmailModal";
 
 export const Footer = () => {
   const [showButton, setShowButton] = useState(false);
@@ -15,10 +16,8 @@ export const Footer = () => {
       }
     };
 
-    // Adiciona o listener de scroll
     window.addEventListener("scroll", handleScroll);
 
-    // Remove o listener ao desmontar o componente
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -31,13 +30,7 @@ export const Footer = () => {
         ">Contato</h4>
         <p className="text-center text-neutral-600 dark:text-neutral-300">Sinta-se à vontade para entrar em contato por e-mail ou através das redes sociais.</p>
         <div className="flex gap-6 justify-center items-center py-20">
-          <a
-            href="https://github.com/rafaelapianezzer"
-            target="_blank"
-            className="bg-neutral-900 dark:bg-neutral-50 rounded-[5px] px-3 py-1"
-          >
-            <i class="fa-regular fa-envelope text-2xl text-neutral-50 dark:text-neutral-900"></i>
-          </a>
+          <EmailModal/>
           <a
             href="https://github.com/rafaelapianezzer"
             target="_blank"
@@ -63,7 +56,7 @@ export const Footer = () => {
         </button>
       )}
       <div className="max-w-screen-xl mx-auto text-center mt-6 lg:mt-10 text-neutral-600 dark:text-neutral-300 p-6">
-        <p className="text-2xs lg:text-xs">© 2024 | Desenvolvido por Rafaela Pianezzer 💜</p>
+        <p className="text-2xs lg:text-xs">© 2025 | Desenvolvido por Rafaela Pianezzer 💜</p>
       </div>
     </div>
   );
