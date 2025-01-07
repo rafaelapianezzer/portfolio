@@ -37,7 +37,7 @@ export const Header = () => {
                             >
                                 <i className="fa-brands fa-linkedin text-2xl text-purple-50"></i>
                             </a>
-                            <a href={`${process.env.PUBLIC_URL}/curriculo.pdf`}
+                            <a href="https://drive.google.com/file/d/1hiKdEkHftzbNI4BQsAre79yuaawCCM20/view?usp=sharing"
                                 target="_blank" rel="noopener noreferrer"
                                 className="bg-purple-600 rounded-[5px] px-3 py-2 font-sora text-purple-50"
                             >
