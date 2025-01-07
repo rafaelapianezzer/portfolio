@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-import linkedin from '../assets/BsLinkedin.svg';
-import gitHub from '../assets/BsGithub.svg';
 import { EmailModal } from "./EmailModal";
 
 export const Footer = () => {
@@ -8,7 +6,6 @@ export const Footer = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Verifica se a posição de rolagem é maior que 300px
       if (window.scrollY > 300) {
         setShowButton(true);
       } else {
@@ -30,7 +27,7 @@ export const Footer = () => {
         ">Contato</h4>
         <p className="text-center text-neutral-600 dark:text-neutral-300">Sinta-se à vontade para entrar em contato por e-mail ou através das redes sociais.</p>
         <div className="flex gap-6 justify-center items-center py-20">
-          <EmailModal/>
+          <EmailModal />
           <a
             href="https://github.com/rafaelapianezzer"
             target="_blank"

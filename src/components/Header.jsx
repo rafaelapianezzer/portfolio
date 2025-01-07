@@ -1,8 +1,6 @@
 import { Navbar } from "./NavBar";
 import { ScrollButton } from "./ScroollButton";
 
-
-
 export const Header = () => {
     return (
         <div>
@@ -40,8 +38,9 @@ export const Header = () => {
                                 <i className="fa-brands fa-linkedin text-2xl text-purple-50"></i>
                             </a>
                             <a
-                                href="https://br.linkedin.com/in/rafaela-pianezzer-970250150"
-                                target="_blank"
+                                href="/curriculo.pdf"
+                                target="_blank" 
+                                rel="noopener noreferrer" 
                                 className="bg-purple-600 rounded-[5px] px-3 py-2 font-sora text-purple-50"
                             >
                                 Currículo
@@ -51,7 +50,7 @@ export const Header = () => {
                 </div>
                 <ScrollButton />
             </div>
-          
+
         </div>
     );
 };

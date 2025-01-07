@@ -4,10 +4,7 @@ import tailwind from '../assets/icons8-tailwind-css-100 (1).png';
 import api from '../assets/api.png';
 import ts from '../assets/typescript.png';
 
-
-
 export const Skills = () => {
-
     const skillsList = [
         {
             name: "HTML5",

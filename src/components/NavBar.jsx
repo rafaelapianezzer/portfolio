@@ -6,7 +6,6 @@ export const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
-        // Quando o menu abrir, desabilita a rolagem do body
         if (isOpen) {
             document.body.style.overflow = 'hidden';
         } else {
@@ -145,8 +144,18 @@ export const Navbar = () => {
                     </div>
                     <div className="flex gap-4 border-t pt-4 items-center justify-between">
                         <div className="flex gap-5">
-                            <i className="fa-brands fa-github text-2xl dark:text-neutral-50"></i>
-                            <i className="fa-brands fa-linkedin text-2xl dark:text-neutral-50"></i>
+                            <a
+                                href="https://br.linkedin.com/in/rafaela-pianezzer-970250150"
+                                target="_blank"
+                            >
+                                <i className="fa-brands fa-linkedin text-2xl dark:text-neutral-50"></i>
+                            </a>
+                            <a
+                                href="https://github.com/rafaelapianezzer"
+                                target="_blank"
+                            >
+                                <i className="fa-brands fa-github text-2xl dark:text-neutral-50"></i>
+                            </a>
                         </div>
                         <div>
                             <ThemeToggle />

@@ -5,15 +5,12 @@ import '../../src/App.css';
 export const BubbleComponent = () => {
   const [bubbles, setBubbles] = useState([]);
 
-
-  // Função para gerar números aleatórios dentro de um intervalo
   const getRandomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
 
   const delay = getRandomNumber(0, 2);
 
-  // Gerar as bolhas ao carregar o componente
   useEffect(() => {
     const numBubbles = 16;
     const newBubbles = Array(numBubbles)
