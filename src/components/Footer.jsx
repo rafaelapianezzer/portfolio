@@ -53,7 +53,7 @@ export const Footer = () => {
         </button>
       )}
       <div className="max-w-screen-xl mx-auto text-center mt-6 lg:mt-10 text-neutral-600 dark:text-neutral-300 p-6">
-        <p className="text-2xs lg:text-xs">© 2025 | Desenvolvido por Rafaela Pianezzer 💜</p>
+        <p className="text-2xs lg:text-xs">© 2025 | Desenvolvido por Rafaela Pianezzer</p>
       </div>
     </div>
   );
